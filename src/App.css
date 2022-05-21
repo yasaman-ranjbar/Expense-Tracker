@@ -1,38 +1,121 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 20rem;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.resultSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expenseBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 60px;
+  padding: 10px;
+  text-align: center;
+  width: 135px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.expenseBox span {
+  font-weight: bold;
+  color: green;
+}
+
+.btn {
+  outline: none;
+  padding: 5px 10px;
+  background-color: #EDE9FE;
+  color: #6D25D9;
+  border-radius: 5px;
+  border: 1px solid #6D25D9;
+}
+
+.primary {
+  color: #fff;
+  background-color:#6D25D9 ;
+  border: none;
+}
+
+.cancel {
+  background-color: #fff;
+  color: #DC2626;
+  border: 1px solid #DC2626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  outline: none;
+}
+
+input[type="radio"] {
+  margin-left: 10px;
+}
+
+.radioBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+}
+
+.radioBox label {
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.transaction {
+  border-radius: 5px;
+  background-color: #f4f4f5;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  border-right: 4px solid green;
+}
+
+.title {
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input.search {
+  width: 100%;
+  margin: 20px 0;
 }
